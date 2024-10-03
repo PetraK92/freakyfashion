@@ -2,7 +2,7 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css"/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -21,7 +21,7 @@
     <header>
       <div class="huvudmeny">
         <div class="logotyp">
-          <img src="images/FreakyfashionLogga.png" alt="logga" />
+          <img src="images/600x200freakyfashion.svg" alt="logga"/>
         </div>
         <div class="menycontainer">
           <div class="sökruta">
@@ -31,14 +31,14 @@
               placeholder="Sök produkt"
               required
             />
-            <div class="ikoner">
+            <ul class="ikoner">
               <li>
                 <a href="#"><i class="bi bi-heart-fill"></i></a>
               </li>
               <li>
                 <a href="#"><i class="bi bi-basket"></i></a>
               </li>
-            </div>
+            </ul>
           </div>
         </div>
       </div>
@@ -52,11 +52,14 @@
       </div>
     </header>
     <main>
+      <!-- hur får jag texten jämte bilden -->
       <article class="populäraprodukter">
-      <div class="produktkort">
-        <a href="#">
-          <img src="images/Svarttshirt.png" alt="Bild på svart t-shirt" />
-        </a>
+        <div class="produktkort tshirtsida">
+          <a href="#">
+            <img src="images/Svarttshirt.png" alt="Bild på svart t-shirt"/>
+          </a>
+          <a class="hjärta2" href="#"><i class="bi bi-heart"></i></a>
+          <div>
           <div class="bildtext">
             <h2>Svart T-Shirt</h2>
           </div>
@@ -64,14 +67,52 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             consequuntur culpa voluptatem in ipsa eum eos eveniet magni
-            consequatur optio quisquam quam ad, voluptatibus similique accusantium
-            nihil cum minus! Delectus?
+            consequatur optio quisquam quam ad, voluptatibus similique
+            accusantium nihil cum minus! Delectus?
           </p>
           <p>199 SEK</p>
-          <!-- behövs en ny hjärtaklass verkligen -->
-          <a class="hjärta2" href="#"><i class="bi bi-heart"></i></a>
+          <button class="läggivarukorgen">Lägg i varukorgen</button>
         </div>
-        </article>
+        </div>
+      </article>
+      <div class="liknandeprodukterrubrik">
+        <h2>Liknande produkter</h2>
+      </div>
+      <div class="liknandeprodukter">
+        <div class="produktkort">
+          <a href="#">
+            <img src="images/Svarttshirt.png" alt="Bild på svart t-shirt"/>
+          </a>
+          <div class="bildtext">
+            <h2>Svart T-Shirt</h2>
+            <h2>199 SEK</h2>
+          </div>
+          <p>Levis</p>
+          <!-- <a class="hjärta" href="#"><i class="bi bi-heart"></i></a> -->
+        </div>
+        <div class="produktkort">
+          <a href="#">
+            <img src="images/Svarttshirt.png" alt="Bild på svart t-shirt"/>
+          </a>
+          <div class="bildtext">
+            <h2>Svart T-Shirt</h2>
+            <h2>199 SEK</h2>
+          </div>
+          <p>Levis</p>
+          <!-- <a class="hjärta" href="#"><i class="bi bi-heart"></i></a> -->
+        </div>
+        <div class="produktkort">
+          <a href="#">
+            <img src="images/Svarttshirt.png" alt="Bild på svart t-shirt"/>
+          </a>
+          <div class="bildtext">
+            <h2>Svart T-Shirt</h2>
+            <h2>199 SEK</h2>
+          </div>
+          <p>Levis</p>
+          <!-- <a class="hjärta" href="#"><i class="bi bi-heart"></i></a> -->
+        </div>
+      </div>
       <div>
         <ul class="slutikoner">
           <li>
@@ -123,12 +164,13 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <div class="jacklista">
+              <!-- göra diven till en ul istället? -->
+              <ul class="jacklista">
                 <li>Vinterjackor</li>
                 <li>Pufferjackor</li>
                 <li>Kappor</li>
                 <li>Trenchcoats</li>
-              </div>
+              </ul>
             </div>
           </div>
         </div>
@@ -195,19 +237,20 @@
       </div>
       <div class="slutmeny">
         <ul>
-          <h6>Shopping</h6>
+          <!-- ändra h6 till en caption? -->
+          <li>Shopping</li>
           <li>Vinterjackor</li>
           <li>Pufferjackor</li>
           <li>Kappa</li>
           <li>Trenchcoats</li>
         </ul>
         <ul>
-          <h6>Mina Sidor</h6>
+          <li>Mina Sidor</li>
           <li>Mina Ordrar</li>
           <li>Mitt Konto</li>
         </ul>
         <ul>
-          <h6>Kundtjänst</h6>
+          <li>Kundtjänst</li>
           <li>Returpolicy</li>
           <li>Integritetspolicy</li>
         </ul>
