@@ -306,6 +306,7 @@ header {
     align-items: center;
 }
 .liknandeprodukterrubrik {
+    display: block;
     text-align: center;
 }
 .läggivarukorgen {
