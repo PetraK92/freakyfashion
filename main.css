@@ -10,7 +10,7 @@ header {
 .menycontainer{
     display: flex;
 }
-/* gör loggan större */
+
 .logotyp {
     margin: 20px;
 }
@@ -191,7 +191,7 @@ header {
 }
 
 .accordion {
-    display: none;
+    display: block;
 }
 
 .copyright {
@@ -201,27 +201,20 @@ header {
     width: 100%;
     margin: 20px;
     padding: 0;
-    display: none;
+    display: block;
 }
 
 .slutmeny {
     display: none;
 }
 
-@media  (max-width:639px) {
-    .accordion {
-        display: block;
-    }  
-    .copyright {
-        display: block;
-    }
 .liknandeprodukter {
     display: none;
 }
 .liknandeprodukterrubrik {
     display: none;
 }
-}
+
 
 @media (min-width: 640px) {
 header {
@@ -320,7 +313,6 @@ header {
     width: 150px;
 }
 
-/* fixa jämt mellanrum */
 .slutikoner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -346,21 +338,22 @@ header {
     font-weight: bold;
     padding-bottom: 5px;
 }
-/* hur får jag denna centerad */
+.accordion {
+    display: none;
+}  
+.copyright {
+    display: none;
+}
 .copyright2 {
     display: flex;
     padding-top: 20px;
     justify-content: center;
     text-align: center;
     width: 100vw;
-    /* margin: 0 auto;
-    text-align: center;
-    width: 100%; */
 }
 }
 
 @media (min-width: 1024px) {
-/* fixa texten  */
     .hero {
     display: flex;
     flex-direction: row-reverse;
@@ -394,34 +387,29 @@ header {
 }
 
 .spots figure {
-    position: relative; /* Add this to position figcaption absolutely within figure */
-    width: 100%; /* Ensure figures take full width if needed */
+    position: relative;
+    width: 100%;
 }
 
 .spots figure img {
-    display: block; /* Removes unwanted whitespace below images */
-    width: 100%;    /* Make images responsive */
+    display: block;
+    width: 100%;
     height: auto;
 }
 
 .spots figure figcaption {
-    position: absolute; /* Position over the image */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;           /* Use flexbox for centering */
-    align-items: center;     /* Vertical centering */
-    justify-content: center; /* Horizontal centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;            /* Text color for contrast */
-    padding: 0 10px;         /* Optional: padding for text */
-    box-sizing: border-box;  /* Include padding in dimensions */
+    color: black;
 }
 
-.spots figure a {
-    display: block; /* Ensure the anchor tags fill the figure if needed */
-}
 .slutikoner {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -483,7 +471,6 @@ header {
     border: 1px solid black;
     width: 200px;
     height: 100%;
-    /* min-height: 100vw; */
     left: 0;
     top: -25px;
     position: absolute;
