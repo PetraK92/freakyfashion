@@ -18,31 +18,30 @@
         <aside class="sidebar">
           <h4>Produkter</h4>
         </aside>
-        <div class="maincontent">
+        <form class="maincontent">
           <h3>Ny produkt</h3>
           <div class="namnruta">
             <input
               class="sökbox"
               type="text"
               placeholder="Produkt namn"
-              required
-            />
+              required/>
           </div>
           <div class="beskrivning">
             <h3>Beskrivning</h3>
-            <textarea></textarea>
+            <textarea required></textarea>
           </div>
           <div class="Bild">
             <h3>Bild</h3>
-            <input type="file"/>
+            <input type="file" required/>
           </div>
           <div>
             <h3>SKU</h3>
-            <input type="text"/>
+            <input type="text" required/>
           </div>
           <div>
             <h3>Pris</h3>
-            <input type="number"/>
+            <input type="number" required/>
           </div>
           <div>
             <h3 class="kategorier">Kategorier</h3>
@@ -64,7 +63,7 @@
             </p>
           </div>
           <button class="läggtill">Lägg till</button>
-        </div>
+        </form>
       </div>
     </main>
   </body>
